@@ -3,7 +3,32 @@ import { connect } from "redux-zero/react";
 import {NavLink} from 'react-router-dom';
 import './App.css';
 
-const MyBoard =()=>{
+const LittleBoard = ({item,index}) => {
+    return(
+        <div  className='littleBoard'>
+            <p>{item.name}</p>
+        </div>
+     )
+
+}
+
+ const BoardsOn = ({mainBoards}) => {
+    return(
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        {
+          mainBoards.map((item,index)=>{
+            return <LittleBoard key ={index} item={item}/>
+          })
+        }
+        </div>
+      </div>
+  </div>
+    )
+}
+
+const MyBoard =({mainBoards})=>{
   return(
     <div className="container-fluid">
       <div className="row">
@@ -16,15 +41,16 @@ const MyBoard =()=>{
               <img src="https://phoenix-trello.herokuapp.com/images/logo-11ecccd65d1c7977997eb6f0bc0002ad.png?vsn=d"/>
           </div>
         </div>
-        <div className="col-lg-2 col-md-2 cont-icon">
-              <span><i class="fa fa-user-o fa-x2" aria-hidden="true"></i></span>
+        <div className="col-lg-2 col-md-2 cont-icon-user">
+              <span><i class="fa fa-user fa-2x" aria-hidden="true"></i></span>
               <NavLink to="board"><span className="board">My Boards</span></NavLink>
           </div>
-        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <span className="add">Agregar lista</span>
-        </div>
+        <BoardsOn mainBoards={mainBoards}/>
       </div>
     </div>
   )
 }
-export default MyBoard;
+
+const mapToProps = ({mainBoards}) => ({mainBoards});
+
+export default connect(mapToProps)(MyBoard)

@@ -79,3 +79,28 @@ body{
     padding: 5px 0px 10px 10px;
     margin: 2%;
 }
+
+/*==============================My Board=============================================*/
+
+.littleBoard{
+  background: rgba(222, 225, 227, 0.9);
+  border-radius: 3px;
+  margin: 0 0.5em 1em 0.5em;
+  line-height: 1.75em;
+  overflow: hidden;
+  padding: 0.75em;
+  min-height: 5em;
+  display: inline-block;
+  width: 20%
+}
+
+.littleBoard p{
+  color: rgb(63, 59, 59);
+  margin: auto;
+}
+.cont-icon-user{
+  color: #fff;
+  line-height: 1.2em;
+  margin: 1%;
+  font-weight: bold;
+} 
