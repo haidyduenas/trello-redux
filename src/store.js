@@ -23,6 +23,26 @@ let Boards = [
     {
         id: 5,
         name: 'Haidy'
+    },
+    {
+        id: 6,
+        name: 'Melania'
+    },
+    {
+        id: 7,
+        name: 'Melania'
+    },
+    {
+        id: 8,
+        name: 'Haidy'
+    },
+    {
+        id: 9,
+        name: 'Melania'
+    },
+    {
+        id: 10,
+        name: 'Melania'
     }
 ]
 

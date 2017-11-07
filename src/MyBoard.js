@@ -22,6 +22,7 @@ const LittleBoard = ({item,index}) => {
             return <LittleBoard key ={index} item={item}/>
           })
         }
+        <input className="inputBoard" placeholder="Add New Board"/>
         </div>
       </div>
   </div>
@@ -42,10 +43,11 @@ const MyBoard =({mainBoards})=>{
           </div>
         </div>
         <div className="col-lg-2 col-md-2 cont-icon-user">
-              <span><i class="fa fa-user fa-2x" aria-hidden="true"></i></span>
+              <span><i className="fa fa-user fa-2x" aria-hidden="true"></i></span>
               <NavLink to="board"><span className="board">My Boards</span></NavLink>
           </div>
         <BoardsOn mainBoards={mainBoards}/>
+
       </div>
     </div>
   )
