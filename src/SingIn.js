@@ -7,10 +7,10 @@ const SingIn =()=>{
         <div className="container-fluid text-center">
             <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 img-logo">
+                <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-logo">
                 <img src="https://phoenix-trello.herokuapp.com/images/logo-11ecccd65d1c7977997eb6f0bc0002ad.png?vsn=d"/>
                 </div>
-                    <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <form>
                             <div className="form-group">
                                 <input type="email" className="form-control input-sing" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
@@ -21,7 +21,7 @@ const SingIn =()=>{
                             <NavLink to="/myboard"><button type="submit" className="btn input-sing btn-sing">Sing In</button></NavLink>
                         </form>
                     </div>
-                <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 img-logo">
+                <div className=" col-md-offset-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 img-logo">
                 <NavLink to="/singup"><p className="create">Create new account</p></NavLink>
                 </div>
                 </div>
